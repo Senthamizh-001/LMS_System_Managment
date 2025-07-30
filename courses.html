@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduLearn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>EduLearn
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Our Courses</h1>
+                    <p class="lead">Explore our comprehensive collection of courses designed to advance your career</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">All Courses</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="web">Web Development</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="data">Data Science</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="design">Design</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="marketing">Marketing</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="row g-4" id="coursesGrid">
+                <!-- Web Development Courses -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="web">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="HTML CSS Course">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>8 weeks</span>
+                            </div>
+                            <h5 class="card-title">Complete HTML & CSS Bootcamp</h5>
+                            <p class="card-text text-muted flex-grow-1">Master the fundamentals of web development with HTML and CSS. Build responsive websites from scratch.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between text-muted small">
+                                    <span><i class="fas fa-user me-1"></i>2,543 students</span>
+                                    <span><i class="fas fa-star text-warning me-1"></i>4.8 (324 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$99</span>
+                                <button class="btn btn-primary enroll-btn" data-course="Complete HTML & CSS Bootcamp">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 course-item" data-category="web">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="JavaScript Course">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>12 weeks</span>
+                            </div>
+                            <h5 class="card-title">Advanced JavaScript Mastery</h5>
+                            <p class="card-text text-muted flex-grow-1">Deep dive into JavaScript concepts, ES6+, async programming, and modern frameworks.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between text-muted small">
+                                    <span><i class="fas fa-user me-1"></i>1,876 students</span>
+                                    <span><i class="fas fa-star text-warning me-1"></i>4.9 (298 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$149</span>
+                                <button class="btn btn-primary enroll-btn" data-course="Advanced JavaScript Mastery">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 course-item" data-category="web">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="React Course">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-danger">Advanced</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>10 weeks</span>
+                            </div>
+                            <h5 class="card-title">React Development Masterclass</h5>
+                            <p class="card-text text-muted flex-grow-1">Build modern web applications with React, Redux, and the latest industry best practices.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between text-muted small">
+                                    <span><i class="fas fa-user me-1"></i>3,241 students</span>
+                                    <span><i class="fas fa-star text-warning me-1"></i>4.7 (412 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$199</span>
+                                <button class="btn btn-primary enroll-btn" data-course="React Development Masterclass">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science Courses -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="data">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.pexels.com/photos/8728380/pexels-photo-8728380.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="Python Course">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>6 weeks</span>
+                            </div>
+                            <h5 class="card-title">Python for Data Science</h5>
+                            <p class="card-text text-muted flex-grow-1">Learn Python programming fundamentals and apply them to data analysis and visualization.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between text-muted small">
+                                    <span><i class="fas fa-user me-1"></i>4,123 students</span>
+                                    <span><i class="fas fa-star text-warning me-1"></i>4.6 (567 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$129</span>
+                                <button class="btn btn-primary enroll-btn" data-course="Python for Data Science">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 course-item" data-category="data">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="Machine Learning Course">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-danger">Advanced</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>16 weeks</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning Fundamentals</h5>
+                            <p class="card-text text-muted flex-grow-1">Explore algorithms, neural networks, and practical applications of machine learning.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between text-muted small">
+                                    <span><i class="fas fa-user me-1"></i>2,987 students</span>
+                                    <span><i class="fas fa-star text-warning me-1"></i>4.8 (401 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$299</span>
+                                <button class="btn btn-primary enroll-btn" data-course="Machine Learning Fundamentals">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Courses -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="design">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="UI UX Design Course">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>8 weeks</span>
+                            </div>
+                            <h5 class="card-title">UI/UX Design Principles</h5>
+                            <p class="card-text text-muted flex-grow-1">Master user interface and user experience design with industry-standard tools and methods.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between text-muted small">
+                                    <span><i class="fas fa-user me-1"></i>1,654 students</span>
+                                    <span><i class="fas fa-star text-warning me-1"></i>4.7 (234 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$179</span>
+                                <button class="btn btn-primary enroll-btn" data-course="UI/UX Design Principles">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marketing Courses -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="marketing">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="Digital Marketing Course">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Beginner</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>10 weeks</span>
+                            </div>
+                            <h5 class="card-title">Digital Marketing Strategy</h5>
+                            <p class="card-text text-muted flex-grow-1">Learn SEO, social media marketing, content marketing, and analytics to grow your business.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between text-muted small">
+                                    <span><i class="fas fa-user me-1"></i>3,456 students</span>
+                                    <span><i class="fas fa-star text-warning me-1"></i>4.5 (289 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$159</span>
+                                <button class="btn btn-primary enroll-btn" data-course="Digital Marketing Strategy">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 course-item" data-category="marketing">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="Social Media Course">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">Intermediate</span>
+                                <span class="text-muted"><i class="fas fa-clock me-1"></i>6 weeks</span>
+                            </div>
+                            <h5 class="card-title">Social Media Marketing</h5>
+                            <p class="card-text text-muted flex-grow-1">Master social media platforms, content creation, and advertising strategies for business growth.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between text-muted small">
+                                    <span><i class="fas fa-user me-1"></i>2,789 students</span>
+                                    <span><i class="fas fa-star text-warning me-1"></i>4.6 (198 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary mb-0">$119</span>
+                                <button class="btn btn-primary enroll-btn" data-course="Social Media Marketing">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-graduation-cap me-2"></i>EduLearn
+                    </h5>
+                    <p class="text-light mb-4">Empowering learners worldwide with quality education and professional development opportunities.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Courses</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="mb-3">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Web Development</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Data Science</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Digital Marketing</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="mb-3">Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li class="text-light"><i class="fas fa-envelope me-2"></i>info@edulearn.com</li>
+                        <li class="text-light"><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</li>
+                        <li class="text-light"><i class="fas fa-map-marker-alt me-2"></i>123 Education St, Learning City</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0 text-light">&copy; 2025 EduLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
