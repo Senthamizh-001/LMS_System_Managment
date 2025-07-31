@@ -298,7 +298,7 @@ function showContactSuccessModal() {
                         <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
                     </div>
                     <h4 class="mb-3">Message Sent Successfully!</h4>
-                    <p class="text-muted mb-4">Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                    <p class="text-muted mb-4">Thank you for contacting us. We'll get back to you within 10 minutes.</p>
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Great!</button>
                 </div>
             </div>
